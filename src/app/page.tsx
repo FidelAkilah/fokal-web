@@ -122,8 +122,8 @@ const FokalLandingPage = () => {
           <div className="text-center space-y-6 mb-16">
             <h2 className="text-4xl font-bold text-gray-900">Mengapa Fokal?</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Indonesia menghadapi darurat kekerasan seksual dengan peningkatan kasus yang mengkhawatirkan. 
-              Fokal hadir sebagai solusi inovatif untuk melindungi anak-anak dari paparan konten berbahaya.
+              Indonesia menghadapi ancaman serius dari paparan konten pornografi pada anak, yang berkorelasi dengan perilaku berbahaya.
+              Fokal hadir sebagai solusi inovatif untuk menutup celah perlindungan digital.
             </p>
           </div>
 
@@ -132,10 +132,9 @@ const FokalLandingPage = () => {
               <div className="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center mb-6 shadow-md">
                 <Users className="w-6 h-6 text-red-600" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Masalah Nyata</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Ancaman Nyata</h3>
               <p className="text-gray-600">
-                Studi menunjukkan remaja yang terpapar pornografi 2-3 kali lebih mungkin melakukan kekerasan seksual 
-                dan cenderung melaporkan perilaku seksual berisiko tinggi.
+                Penelitian menunjukkan paparan pornografi membuat remaja 2-3 kali lebih mungkin melakukan kekerasan seksual dan memicu perilaku seksual berisiko tinggi.
               </p>
             </div>
 
@@ -143,10 +142,9 @@ const FokalLandingPage = () => {
               <div className="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center mb-6 shadow-md">
                 <Smartphone className="w-6 h-6 text-orange-600" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Akses Mudah</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Akses yang Tidak Terkontrol</h3>
               <p className="text-gray-600">
-                Dengan penetrasi internet 79.5% dan jutaan konten pornografi di media sosial, 
-                anak-anak semakin mudah terpapar konten berbahaya.
+                Dengan penetrasi internet mencapai 79.5% di Indonesia dan jutaan konten negatif beredar di media sosial, anak-anak semakin rentan terpapar konten berbahaya.
               </p>
             </div>
 
@@ -154,10 +152,9 @@ const FokalLandingPage = () => {
               <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-6 shadow-md">
                 <Shield className="w-6 h-6 text-purple-600" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Solusi Terbatas</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Solusi Konvensional Gagal</h3>
               <p className="text-gray-600">
-                Aplikasi parental control konvensional hanya memblokir URL atau aplikasi, 
-                tidak dapat menyaring konten berbahaya yang sudah masuk ke aplikasi.
+                Aplikasi parental control tradisional hanya memblokir URL. Mereka tidak dapat menyaring konten berbahaya yang sudah masuk ke dalam aplikasi media sosial.
               </p>
             </div>
           </div>
