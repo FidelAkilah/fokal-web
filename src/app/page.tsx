@@ -777,9 +777,9 @@ const FokalLandingPage = () => {
           <div className="grid lg:grid-cols-4 gap-8">
             <div className="lg:col-span-2 space-y-6">
               <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-white rounded-xl flex items-center justify-center">
+              <div className="w-10 h-10 flex items-center justify-center">
                 <img
-                  src="../logo2.png"
+                  src="../logo.png"
                   alt="Fokal Logo"
                   className="w-full h-full object-contain"
                 />

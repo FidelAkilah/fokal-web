@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Fokal',
+  title: 'Fokal | Perisai Digital Anak',
   description: 'For a better future',
   icons: {
     icon: '../logo.png',
