@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from 'react';
 import { Shield, Eye, Bell, Activity, Download, Star, Users, Zap, CheckCircle, ArrowRight, Smartphone, Brain, Lock, X } from 'lucide-react';
 
