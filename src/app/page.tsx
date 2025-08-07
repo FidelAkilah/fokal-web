@@ -1,5 +1,5 @@
 import React from 'react';
-import { Shield, Eye, Bell, Activity, Download, Star, Users, Zap, CheckCircle, ArrowRight, Smartphone, Brain, Lock } from 'lucide-react';
+import { Shield, Eye, Bell, Activity, Download, Star, Users, Zap, CheckCircle, ArrowRight, Smartphone, Brain, Lock, X } from 'lucide-react';
 
 const FokalLandingPage = () => {
   return (
@@ -32,10 +32,61 @@ const FokalLandingPage = () => {
         </div>
       </nav>
 
-      {/* Hero Section */}
-      <section className="pt-32 pb-16 px-6">
+     {/* Hero Section */}
+     <section className="pt-32 pb-16 px-6">
         <div className="container mx-auto max-w-6xl">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left Column - Visual Representation */}
+            <div className="flex justify-center items-center">
+              <div className="relative">
+                {/* Background censored content representation */}
+                <div className="w-80 h-60 bg-gradient-to-br from-red-100 to-pink-100 rounded-2xl border-2 border-red-200 flex items-center justify-center relative overflow-hidden shadow-2xl">
+                  {/* Blurred/censored background pattern */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-red-200/50 to-pink-200/50 backdrop-blur-sm"></div>
+                  
+                  {/* Censored content representation */}
+                  <div className="absolute inset-4 bg-gradient-to-br from-gray-300 to-gray-400 rounded-xl blur-sm opacity-60"></div>
+                  
+                  {/* Multiple warning elements scattered */}
+                  <div className="absolute top-4 left-4 w-8 h-8 bg-red-500 rounded-full opacity-30"></div>
+                  <div className="absolute top-8 right-6 w-6 h-6 bg-red-400 rounded-full opacity-40"></div>
+                  <div className="absolute bottom-8 left-8 w-10 h-6 bg-red-300 rounded opacity-50"></div>
+                  <div className="absolute bottom-4 right-4 w-12 h-4 bg-red-400 rounded opacity-35"></div>
+                  
+                  {/* Central warning text */}
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="bg-red-500/80 text-white px-4 py-2 rounded-lg text-sm font-bold backdrop-blur-sm">
+                      KONTEN TIDAK PANTAS
+                    </div>
+                  </div>
+                  
+                  {/* Large X overlay */}
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="relative">
+                      
+                      
+                      {/* Central X icon for emphasis */}
+                      <div className="w-20 h-20 bg-red-600 rounded-full flex items-center justify-center shadow-[0_0_30px_theme(colors.red.500)] animate-pulse">
+                        <X className="w-12 h-12 text-white font-bold stroke-[3]" />
+                      </div>
+                    </div>
+                  </div>
+                  
+                  
+                </div>
+                
+                {/* Floating warning elements around the main visual */}
+                <div className="absolute -top-6 -left-6 w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center shadow-lg animate-bounce">
+                  <span className="text-white font-bold text-xl">!</span>
+                </div>
+                
+                <div className="absolute -bottom-6 -left-8 w-14 h-14 bg-orange-500 rounded-full flex items-center justify-center shadow-lg">
+                  <Bell className="w-7 h-7 text-white animate-ping" />
+                </div>
+              </div>
+            </div>
+
+            {/* Right Column - Content */}
             <div className="space-y-8">
               <div className="space-y-6">
                 <div className="inline-flex items-center space-x-2 bg-purple-100/60 backdrop-blur-sm text-purple-700 px-4 py-2 rounded-full text-sm font-medium border border-purple-200/80">
@@ -58,39 +109,18 @@ const FokalLandingPage = () => {
                   <Download className="w-5 h-5 group-hover:scale-110 transition-transform" />
                   <span>Download Sekarang</span>
                 </button>
-                <button className="border-2 border-purple-200 text-purple-700 px-8 py-4 rounded-xl font-semibold hover:bg-purple-100/50 hover:shadow-[0_0_15px_theme(colors.purple.200)] transition-all">
+                <a
+                  href="#tentang"
+                  className="border-2 border-purple-200 text-purple-700 px-8 py-4 rounded-xl font-semibold hover:bg-purple-100/50 hover:shadow-[0_0_15px_theme(colors.purple.200)] transition-all"
+                >
                   Pelajari Lebih Lanjut
-                </button>
-              </div>
-            </div>
-
-            <div className="relative">
-              <div className="bg-white/60 backdrop-blur-lg rounded-3xl p-8 shadow-2xl border border-purple-100/80">
-                <div className="bg-white/80 rounded-2xl p-6 space-y-4">
-                  <div className="flex items-center justify-between">
-                    <h3 className="font-semibold text-gray-800">Status Perlindungan</h3>
-                    <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse shadow-[0_0_10px_theme(colors.green.400)]"></div>
-                  </div>
-                  <div className="space-y-3">
-                    <div className="flex items-center justify-between p-3 bg-green-50/70 rounded-lg">
-                      <span className="text-sm text-gray-700">Deteksi Visual</span>
-                      <CheckCircle className="w-5 h-5 text-green-600" />
-                    </div>
-                    <div className="flex items-center justify-between p-3 bg-green-50/70 rounded-lg">
-                      <span className="text-sm text-gray-700">Deteksi Teks</span>
-                      <CheckCircle className="w-5 h-5 text-green-600" />
-                    </div>
-                    <div className="flex items-center justify-between p-3 bg-blue-50/70 rounded-lg">
-                      <span className="text-sm text-gray-700">Notifikasi Real-time</span>
-                      <Bell className="w-5 h-5 text-blue-600" />
-                    </div>
-                  </div>
-                </div>
+                </a>
               </div>
             </div>
           </div>
         </div>
       </section>
+
 
       {/* Stats Section */}
       <section className="py-16 bg-white/50 backdrop-blur-sm">
@@ -122,8 +152,8 @@ const FokalLandingPage = () => {
           <div className="text-center space-y-6 mb-16">
             <h2 className="text-4xl font-bold text-gray-900">Mengapa Fokal?</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Indonesia menghadapi darurat kekerasan seksual dengan peningkatan kasus yang mengkhawatirkan. 
-              Fokal hadir sebagai solusi inovatif untuk melindungi anak-anak dari paparan konten berbahaya.
+              Indonesia menghadapi ancaman serius dari paparan konten pornografi pada anak, yang berkorelasi dengan perilaku berbahaya.
+              Fokal hadir sebagai solusi inovatif untuk menutup celah perlindungan digital.
             </p>
           </div>
 
@@ -132,10 +162,9 @@ const FokalLandingPage = () => {
               <div className="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center mb-6 shadow-md">
                 <Users className="w-6 h-6 text-red-600" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Masalah Nyata</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Ancaman Nyata</h3>
               <p className="text-gray-600">
-                Studi menunjukkan remaja yang terpapar pornografi 2-3 kali lebih mungkin melakukan kekerasan seksual 
-                dan cenderung melaporkan perilaku seksual berisiko tinggi.
+                Penelitian menunjukkan paparan pornografi membuat remaja 2-3 kali lebih mungkin melakukan kekerasan seksual dan memicu perilaku seksual berisiko tinggi. 
               </p>
             </div>
 
@@ -143,10 +172,9 @@ const FokalLandingPage = () => {
               <div className="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center mb-6 shadow-md">
                 <Smartphone className="w-6 h-6 text-orange-600" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Akses Mudah</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Akses yang Tidak Terkontrol</h3>
               <p className="text-gray-600">
-                Dengan penetrasi internet 79.5% dan jutaan konten pornografi di media sosial, 
-                anak-anak semakin mudah terpapar konten berbahaya.
+                Dengan penetrasi internet mencapai 79.5% di Indonesia dan jutaan konten negatif beredar di media sosial, anak-anak semakin rentan terpapar konten berbahaya. 
               </p>
             </div>
 
@@ -154,10 +182,9 @@ const FokalLandingPage = () => {
               <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-6 shadow-md">
                 <Shield className="w-6 h-6 text-purple-600" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Solusi Terbatas</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Solusi Konvensional Gagal</h3>
               <p className="text-gray-600">
-                Aplikasi parental control konvensional hanya memblokir URL atau aplikasi, 
-                tidak dapat menyaring konten berbahaya yang sudah masuk ke aplikasi.
+                Aplikasi parental control tradisional hanya memblokir URL. Mereka tidak dapat menyaring konten berbahaya yang sudah masuk ke dalam aplikasi media sosial.
               </p>
             </div>
           </div>
@@ -747,13 +774,13 @@ const FokalLandingPage = () => {
           <div className="grid lg:grid-cols-4 gap-8">
             <div className="lg:col-span-2 space-y-6">
               <div className="flex items-center space-x-3">
-                <div className="w-10 h-10 bg-gradient-to-br from-purple-600 to-purple-800 rounded-xl flex items-center justify-center">
+              <div className="w-10 h-10 bg-white rounded-xl flex items-center justify-center">
                 <img
-                  src="../logo.png"
+                  src="../logo2.png"
                   alt="Fokal Logo"
                   className="w-full h-full object-contain"
                 />
-                </div>
+              </div>
                 <span className="text-2xl font-bold">Fokal</span>
               </div>
               <p className="text-gray-400 text-lg leading-relaxed">
