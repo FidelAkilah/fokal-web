@@ -213,7 +213,7 @@ const FokalLandingPage = () => {
                 </div>
                 <h3 className="text-3xl font-bold text-gray-900">Deteksi Konten Visual</h3>
                 <p className="text-lg text-gray-600">
-                  Menggunakan teknologi YOLO v5 dan CNN Grid-Based Cropping untuk mendeteksi 
+                  Menggunakan teknologi YOLO v8 mendeteksi 
                   konten pornografi dalam gambar dan video secara akurat dan cepat.
                 </p>
                 <ul className="space-y-3">
@@ -626,7 +626,7 @@ const FokalLandingPage = () => {
               </div>
               <h3 className="text-xl font-semibold text-gray-900">AI Analysis</h3>
               <p className="text-gray-600">
-                Model AI menganalisis gambar dan teks menggunakan YOLO v5, CNN untuk deteksi konten
+                Model AI menganalisis gambar dan teks menggunakan YOLO v8 untuk deteksi konten
               </p>
             </div>
 
@@ -660,16 +660,10 @@ const FokalLandingPage = () => {
                   <div className="w-12 h-12 bg-yellow-100 rounded-xl flex items-center justify-center mx-auto">
                     <Brain className="w-6 h-6 text-yellow-600" />
                   </div>
-                  <h4 className="font-semibold text-gray-900">YOLO v5</h4>
+                  <h4 className="font-semibold text-gray-900">YOLO v8</h4>
                   <p className="text-sm text-gray-600">Object detection untuk identifikasi visual</p>
                 </div>
-                <div className="space-y-3">
-                  <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mx-auto">
-                    <Brain className="w-6 h-6 text-blue-600" />
-                  </div>
-                  <h4 className="font-semibold text-gray-900">CNN</h4>
-                  <p className="text-sm text-gray-600">Grid-based cropping untuk analisis detail</p>
-                </div>
+                
                 <div className="space-y-3">
                   <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mx-auto">
                     <Eye className="w-6 h-6 text-green-600" />
