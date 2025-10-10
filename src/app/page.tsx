@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
+import StarBorder from '../components/StarBorder'
 import { Shield, Eye, Bell, Activity, Download, Star, Users, Zap, CheckCircle, ArrowRight, Smartphone, Brain, Lock, X } from 'lucide-react';
 
 const FokalLandingPage = () => {
@@ -193,6 +194,85 @@ const FokalLandingPage = () => {
           </div>
         </div>
       </section>
+      {/* Video Explanation Section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-6 max-w-6xl">
+          <div className="text-center space-y-6 mb-12">
+            <div className="inline-flex items-center space-x-2 bg-purple-100/60 backdrop-blur-sm text-purple-700 px-4 py-2 rounded-full text-sm font-medium border border-purple-200/80">
+              <Eye className="w-4 h-4" />
+              <span>Penjelasan Produk</span>
+            </div>
+            <h2 className="text-4xl font-bold text-gray-900">
+              Lihat Bagaimana <span className="bg-gradient-to-r from-purple-600 to-purple-800 bg-clip-text text-transparent">Fokal Bekerja</span>
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Dapatkan pemahaman mendalam tentang bagaimana teknologi AI Vision kami melindungi anak-anak dari konten berbahaya secara real-time.
+            </p>
+          </div>
+
+          <div className="max-w-4xl mx-auto">
+            <div className="relative group">
+              {/* YouTube Video Container with modern styling */}
+              <div className="relative bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl overflow-hidden shadow-2xl hover:shadow-[0_0_30px_rgba(147,51,234,0.3)] transition-all duration-500">
+                <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+                  <iframe
+                    className="absolute top-0 left-0 w-full h-full rounded-2xl"
+                    src="https://www.youtube.com/embed/Wc5JELpMaEg?si=TbT4zhXi-Vahwdswrel=0&modestbranding=1&showinfo=0"
+                    title="Penjelasan Fokal - Parental Control AI"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+                
+                {/* Overlay gradient for better visual appeal */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl"></div>
+              </div>
+
+              {/* Decorative elements */}
+              <div className="absolute -top-6 -left-6 w-12 h-12 bg-purple-500 rounded-full opacity-20 animate-pulse"></div>
+              <div className="absolute -bottom-6 -right-6 w-16 h-16 bg-purple-400 rounded-full opacity-15 animate-pulse delay-1000"></div>
+            </div>
+
+            {/* Video highlights below */}
+            <div className="grid md:grid-cols-3 gap-6 mt-12">
+              <div className="text-center space-y-3 group">
+                <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center mx-auto shadow-lg group-hover:scale-110 transition-transform">
+                  <Brain className="w-6 h-6 text-white" />
+                </div>
+                <h3 className="font-semibold text-gray-900">AI Vision Technology</h3>
+                <p className="text-sm text-gray-600">Deteksi konten berbahaya dengan akurasi tinggi menggunakan computer vision</p>
+              </div>
+
+              <div className="text-center space-y-3 group">
+                <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mx-auto shadow-lg group-hover:scale-110 transition-transform">
+                  <Zap className="w-6 h-6 text-white" />
+                </div>
+                <h3 className="font-semibold text-gray-900">Real-time Protection</h3>
+                <p className="text-sm text-gray-600">Perlindungan instan tanpa delay untuk mengamankan anak Anda</p>
+              </div>
+
+              <div className="text-center space-y-3 group">
+                <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center mx-auto shadow-lg group-hover:scale-110 transition-transform">
+                  <Lock className="w-6 h-6 text-white" />
+                </div>
+                <h3 className="font-semibold text-gray-900">Privacy First</h3>
+                <p className="text-sm text-gray-600">Data anak Anda tetap aman dan private dengan enkripsi end-to-end</p>
+              </div>
+            </div>
+
+            {/* Call to action after video */}
+            <div className="text-center mt-12">
+              <button className="bg-gradient-to-r from-purple-600 to-purple-700 text-white px-8 py-4 rounded-xl font-semibold hover:shadow-[0_0_20px_theme(colors.purple.500)] transition-all flex items-center justify-center space-x-2 group mx-auto">
+                <Download className="w-5 h-5 group-hover:scale-110 transition-transform" />
+                <span>Coba Fokal Sekarang</span>
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </button>
+              <p className="text-sm text-gray-500 mt-4">Gratis untuk 30 hari pertama • Tidak perlu kartu kredit</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Features Section */}
       <section id="fitur" className="py-20 bg-white">
@@ -231,41 +311,44 @@ const FokalLandingPage = () => {
                   </li>
                 </ul>
               </div>
-              <div className="bg-white/60 backdrop-blur-lg rounded-2xl p-8 border border-purple-100/80 shadow-lg">
-                <div className="bg-white/80 rounded-xl p-6 shadow-inner">
-                  <div className="text-center space-y-4">
-                    <Brain className="w-12 h-12 text-purple-600 mx-auto" />
-                    <h4 className="font-semibold text-gray-800">AI Vision Detection</h4>
-                    <div className="space-y-2">
-                      <div className="bg-green-100/70 text-green-800 px-3 py-1 rounded-full text-sm">Ignore</div>
-                      <div className="bg-yellow-100/70 text-yellow-800 px-3 py-1 rounded-full text-sm">Review</div>
-                      <div className="bg-red-100/70 text-red-800 px-3 py-1 rounded-full text-sm">Alert</div>
+              <StarBorder color="rgba(147, 51, 234, 0.8)" speed="8s" className="hover:scale-105 transition-transform duration-300">
+                <div className="p-8 shadow-lg">
+                  <div className="bg-white/80 rounded-xl p-6 shadow-inner">
+                    <div className="text-center space-y-4">
+                      <Brain className="w-12 h-12 text-purple-600 mx-auto" />
+                      <h4 className="font-semibold text-gray-800">AI Vision Detection</h4>
+                      <div className="space-y-2">
+                        <div className="bg-green-100/70 text-green-800 px-3 py-1 rounded-full text-sm">Ignore</div>
+                        <div className="bg-yellow-100/70 text-yellow-800 px-3 py-1 rounded-full text-sm">Review</div>
+                        <div className="bg-red-100/70 text-red-800 px-3 py-1 rounded-full text-sm">Alert</div>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
+              </StarBorder>
             </div>
 
             {/* Feature 2 */}
             <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div className="bg-white/60 backdrop-blur-lg rounded-2xl p-8 lg:order-1 border border-blue-100/80 shadow-lg">
-                <div className="bg-white/80 rounded-xl p-6 shadow-inner">
-                  <div className="space-y-4">
-                    <h4 className="font-semibold text-gray-800">Deteksi Pornoteks</h4>
-                    <div className="space-y-2">
-                      <div className="flex items-center justify-between p-2 bg-gray-50/70 rounded">
-                        <span className="text-sm">OCR Processing</span>
-                        <CheckCircle className="w-4 h-4 text-green-600" />
-                      </div>
-                      
-                      <div className="flex items-center justify-between p-2 bg-gray-50/70 rounded">
-                        <span className="text-sm">Threshold Check</span>
-                        <CheckCircle className="w-4 h-4 text-green-600" />
+              <StarBorder color="rgba(37, 99, 235, 0.8)" speed="7s" className="lg:order-1 hover:scale-105 transition-transform duration-300">
+                <div className="p-8 shadow-lg">
+                  <div className="bg-white/80 rounded-xl p-6 shadow-inner">
+                    <div className="space-y-4">
+                      <h4 className="font-semibold text-gray-800">Deteksi Pornoteks</h4>
+                      <div className="space-y-2">
+                        <div className="flex items-center justify-between p-2 bg-gray-50/70 rounded">
+                          <span className="text-sm">OCR Processing</span>
+                          <CheckCircle className="w-4 h-4 text-green-600" />
+                        </div>
+                        <div className="flex items-center justify-between p-2 bg-gray-50/70 rounded">
+                          <span className="text-sm">Threshold Check</span>
+                          <CheckCircle className="w-4 h-4 text-green-600" />
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
+              </StarBorder>
               <div className="space-y-6 lg:order-2">
                 <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-blue-800 rounded-2xl flex items-center justify-center shadow-[0_0_20px_theme(colors.blue.500)]">
                   <Brain className="w-8 h-8 text-white" />
@@ -280,7 +363,6 @@ const FokalLandingPage = () => {
                     <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
                     <span className="text-gray-700">Ekstraksi teks dari gambar dan screenshot</span>
                   </li>
-                  
                   <li className="flex items-center space-x-3">
                     <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
                     <span className="text-gray-700">Skor probabilitas akurat</span>
@@ -315,57 +397,61 @@ const FokalLandingPage = () => {
                   </li>
                 </ul>
               </div>
-              <div className="bg-white/60 backdrop-blur-lg rounded-2xl p-8 border border-green-100/80 shadow-lg">
-                <div className="bg-white/80 rounded-xl p-6 shadow-inner">
-                  <div className="space-y-4">
-                    <div className="flex items-center justify-between">
-                      <h4 className="font-semibold text-gray-800">Peringatan Terdeteksi</h4>
-                      <div className="w-3 h-3 bg-red-500 rounded-full animate-pulse shadow-[0_0_10px_theme(colors.red.400)]"></div>
+              <StarBorder color="rgba(34, 197, 94, 0.8)" speed="6s" className="hover:scale-105 transition-transform duration-300">
+                <div className="p-8 shadow-lg">
+                  <div className="bg-white/80 rounded-xl p-6 shadow-inner">
+                    <div className="space-y-4">
+                      <div className="flex items-center justify-between">
+                        <h4 className="font-semibold text-gray-800">Peringatan Terdeteksi</h4>
+                        <div className="w-3 h-3 bg-red-500 rounded-full animate-pulse shadow-[0_0_10px_theme(colors.red.400)]"></div>
+                      </div>
+                      <div className="p-4 bg-red-50/70 rounded-lg border-l-4 border-red-500">
+                        <p className="text-sm text-red-800 font-medium">Konten tidak pantas terdeteksi di Instagram</p>
+                        <p className="text-xs text-red-600 mt-1">Baru saja • Tingkat: Tinggi</p>
+                      </div>
+                      <button className="w-full bg-red-600 text-white py-2 rounded-lg text-sm font-medium hover:shadow-[0_0_15px_theme(colors.red.500)] transition-shadow">
+                        Lihat Detail
+                      </button>
                     </div>
-                    <div className="p-4 bg-red-50/70 rounded-lg border-l-4 border-red-500">
-                      <p className="text-sm text-red-800 font-medium">Konten tidak pantas terdeteksi di Instagram</p>
-                      <p className="text-xs text-red-600 mt-1">Baru saja • Tingkat: Tinggi</p>
-                    </div>
-                    <button className="w-full bg-red-600 text-white py-2 rounded-lg text-sm font-medium hover:shadow-[0_0_15px_theme(colors.red.500)] transition-shadow">
-                      Lihat Detail
-                    </button>
                   </div>
                 </div>
-              </div>
+              </StarBorder>
             </div>
 
             {/* Feature 4 */}
             <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div className="bg-white/60 backdrop-blur-lg rounded-2xl p-8 lg:order-1 border border-indigo-100/80 shadow-lg">
-                <div className="bg-white/80 rounded-xl p-6 shadow-inner">
-                  <div className="space-y-4">
-                    <h4 className="font-semibold text-gray-800">Activity Log</h4>
-                    <div className="space-y-3">
-                      <div className="flex items-center justify-between p-3 bg-gray-50/70 rounded">
-                        <div>
-                          <p className="text-sm font-medium">Instagram</p>
-                          <p className="text-xs text-gray-500">2 jam yang lalu</p>
+              <StarBorder color="rgba(99, 102, 241, 0.8)" speed="9s" className="lg:order-1 hover:scale-105 transition-transform duration-300">
+                <div className="p-8 shadow-lg">
+                  <div className="bg-white/80 rounded-xl p-6 shadow-inner">
+                    <div className="space-y-4">
+                      <h4 className="font-semibold text-gray-800">Activity Log</h4>
+                      <div className="space-y-3">
+                        <div className="flex items-center justify-between p-3 bg-gray-50/70 rounded">
+                          <div>
+                            <p className="text-sm font-medium">Instagram</p>
+                            <p className="text-xs text-gray-500">2 jam yang lalu</p>
+                          </div>
+                          <div className="w-2 h-2 bg-green-500 rounded-full"></div>
                         </div>
-                        <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                      </div>
-                      <div className="flex items-center justify-between p-3 bg-red-50/70 rounded">
-                        <div>
-                          <p className="text-sm font-medium">WhatsApp</p>
-                          <p className="text-xs text-gray-500">3 jam yang lalu</p>
+                        <div className="flex items-center justify-between p-3 bg-red-50/70 rounded">
+                          <div>
+                            <p className="text-sm font-medium">WhatsApp</p>
+                            <p className="text-xs text-gray-500">3 jam yang lalu</p>
+                          </div>
+                          <div className="w-2 h-2 bg-red-500 rounded-full"></div>
                         </div>
-                        <div className="w-2 h-2 bg-red-500 rounded-full"></div>
-                      </div>
-                      <div className="flex items-center justify-between p-3 bg-gray-50/70 rounded">
-                        <div>
-                          <p className="text-sm font-medium">YouTube</p>
-                          <p className="text-xs text-gray-500">5 jam yang lalu</p>
+                        <div className="flex items-center justify-between p-3 bg-gray-50/70 rounded">
+                          <div>
+                            <p className="text-sm font-medium">YouTube</p>
+                            <p className="text-xs text-gray-500">5 jam yang lalu</p>
+                          </div>
+                          <div className="w-2 h-2 bg-green-500 rounded-full"></div>
                         </div>
-                        <div className="w-2 h-2 bg-green-500 rounded-full"></div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
+              </StarBorder>
               <div className="space-y-6 lg:order-2">
                 <div className="w-16 h-16 bg-gradient-to-br from-indigo-600 to-indigo-800 rounded-2xl flex items-center justify-center shadow-[0_0_20px_theme(colors.indigo.500)]">
                   <Activity className="w-8 h-8 text-white" />
@@ -765,19 +851,19 @@ const FokalLandingPage = () => {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-gray-900 text-white py-16">
+        {/* Footer */}
+        <footer className="bg-gray-900 text-white py-16">
         <div className="container mx-auto px-6 max-w-6xl">
           <div className="grid lg:grid-cols-4 gap-8">
             <div className="lg:col-span-2 space-y-6">
               <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 flex items-center justify-center">
-                <img
-                  src="../logo.png"
-                  alt="Fokal Logo"
-                  className="w-full h-full object-contain"
-                />
-              </div>
+                <div className="w-10 h-10 flex items-center justify-center">
+                  <img
+                    src="/logo.png" // Assuming your Fokal logo is also in public
+                    alt="Fokal Logo"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
                 <span className="text-2xl font-bold">Fokal</span>
               </div>
               <p className="text-gray-400 text-lg leading-relaxed">
@@ -805,10 +891,21 @@ const FokalLandingPage = () => {
             </div>
           </div>
 
-          <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-400">
-              © 2025 Fokal. Dibuat dengan ❤️ oleh Tim Universitas Indonesia untuk GEMASTIK 2025
+          <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <p className="text-gray-400 text-sm">
+              © 2025 Fokal. All rights reserved.
             </p>
+            <div className="flex items-center space-x-3">
+              {/* Use the path directly as a string */}
+              <img 
+                src="/gemastik18.png" 
+                alt="Gemastik Logo" 
+                className="h-12 w-auto" 
+              />
+              <span className="text-gray-400 text-sm">
+                Dibuat oleh tim Little Vietnam Universitas Indonesia untuk Gemastik 2025
+              </span>
+            </div>
           </div>
         </div>
       </footer>
